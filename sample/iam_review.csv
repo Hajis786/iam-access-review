@@ -1,0 +1,11 @@
+user,arn,finding,control,severity
+<root_account>,arn:aws:iam::123456789012:root,Root account has an active access key,CIS 1.4 / NIST PR.AA-03,High
+admin-you,arn:aws:iam::123456789012:user/admin-you,AdministratorAccess attached directly to user,CIS 1.16 / NIST PR.AA-05,High
+test-admin,arn:aws:iam::123456789012:user/test-admin,AdministratorAccess attached directly to user,CIS 1.16 / NIST PR.AA-05,High
+test-late,arn:aws:iam::123456789012:user/test-late,AdministratorAccess attached directly to user,CIS 1.16 / NIST PR.AA-05,High
+test-nomfa,arn:aws:iam::123456789012:user/test-nomfa,Console user without MFA,CIS 1.10 / NIST PR.AA-03,High
+svc-legacy,arn:aws:iam::123456789012:user/svc-legacy,Access key 1 older than 90 days,CIS 1.14 / NIST PR.AA-01,Medium
+test-idle,arn:aws:iam::123456789012:user/test-idle,Access key 1 older than 90 days,CIS 1.14 / NIST PR.AA-01,Medium
+test-idle,arn:aws:iam::123456789012:user/test-idle,Access key 1 unused over 45 days,CIS 1.12 / NIST PR.AA-05,Medium
+test-nomfa,arn:aws:iam::123456789012:user/test-nomfa,Console password unused over 45 days,CIS 1.12 / NIST PR.AA-05,Medium
+test-late,arn:aws:iam::123456789012:user/test-late,Not in credential report yet. Credential rules skipped until it refreshes,Coverage gap (no control test),Info
